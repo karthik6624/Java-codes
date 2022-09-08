@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class GuessNumber {
+    public static void main(String[] args){
+        try (Scanner sc = new Scanner(System.in)) {
+            int machine=(int)(Math.random()*100);
+            int user;
+            do{
+                System.out.println("Guess any number between 1-100");
+                user=sc.nextInt();
+                if(user==machine){
+                System.out.println("guess is correct");
+                break;
+                }
+                else if(user>machine){
+                    System.out.println("number is too large");
+                }
+                else if(user<machine){
+                    System.out.println("number is too small");
+                }
+            }while(user>=0);
+        }
+}
+}
