@@ -1,0 +1,20 @@
+import java.util.HashMap;
+public class Hashmaptutorial{
+    public static void main(String[] args){
+        HashMap<String,Integer> marks= new HashMap<String,Integer>();
+        //Hasmaps store key and value in the sorted order of keys...
+        marks.put("rohan",10);   
+        //put() is used to insert values into the Hashmap and get is used to extract the value of the key...
+        marks.put("suma",24);
+        System.out.println(marks);
+        System.out.println(marks.get("suma"));
+        marks.remove("rohan"); //remove() removes the key passed in the function..
+        System.out.println(marks);
+        System.out.println(marks.containsValue(24));
+        System.out.println(marks.containsKey("suma"));
+        System.out.println(marks.size());
+        System.out.println(marks.replace("suma",26));
+        System.out.println(marks.values());
+        System.out.println(marks.keySet());
+    }
+}
