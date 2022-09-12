@@ -1,0 +1,31 @@
+import java.util.Arrays;
+public class ArraysAndTypeCasting {
+    public static void main(String[] args){
+        int[] a=new int[5];
+        a[0]=5;
+        a[1]=3;
+        a[2]=1;
+        a[3]=2;
+        a[4]=9;
+        System.out.println(a[1]);                    //3
+        System.out.println(Arrays.toString(a));
+        System.out.println(a.length);                //5
+        Arrays.sort(a);
+        System.out.println(a[0]);                    //1
+
+
+        double price=100.00;
+        double pri=18+price;                                       //implicit casting
+        System.out.println(pri);     //int to double is possible
+
+        //int price=100;
+        //int fp=price+18.0;         // explicit type casting should be done
+        int fp=price+(int)18.0;    
+        System.out.println(fp);     //118  
+        
+        System.out.println(Math.min(5,2));     //2
+        System.out.println(Math.max(2, 7));    //7
+        System.out.println(Math.random());        //gives values between 0.0 and 1.0
+        
+    }
+}
